@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ElectroSolve Nexus</title>
+<link rel="icon " type="x-icon" href="images/41d2d539-248b-4588-bbfd-a93eee5fec37-modified.png">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    body{
+      margin: 0;
+      background-color:gainsboro;
+      opacity:  background-color 0.2;
+    }
+    header{
+      background-color: rgba(7, 86, 86, 0.961);
+      margin-bottom: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+    header h1{
+      margin: 0;
+     padding: 20px;
+     color: white;
+     display: flex;
+     font-weight: bold;
+   margin-left: 20px;
+    }
+    header .container{
+      margin: 0;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    nav a li{
+      float: left;
+    padding-right: 10px;
+      list-style-type: none;
+     
+      color: white;
+      
+      display: flex;
+      cursor: pointer;
+    }
+    nav {
+      align-items: center;
+display: flex;
+margin-right: 10px;
+    }
+    nav i{
+      padding: 3px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    li.drop-down{
+      display: inline;
+      text-decoration: none;
+     
+    }
+    li a{
+      text-decoration: none;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+.dropdown-content{
+  background-color: #00ffeb;
+  width: 300px;
+  display: none;
+  z-index: 1;
+  height: 300px;
+  position: absolute;
+}
+li.drop-down:hover .dropdown-content{
+  display: block;
+}
+    .hero{
+      margin: 0;
+      padding: 0;
+      max-width: 12000px;
+      padding: 60px;
+    background-image: url(images/herobackground.jpg);
+    background-repeat: no-repeat;
+      text-align: center;
+     background-size: cover;
+font-weight: bold;
+
+
+
+      line-height: 20px;
+    }
+    .header{
+      color: black;
+      margin: 0;
+      font-size: 2rem;
+      
+     text-shadow: 2px 2px 1px #8ca659;;
+    }
+ 
+    .tagline1{
+      color: black;
+      font-size: 28px;
+       font-family: "PT Serif", serif,arial;
+  font-weight: 900; 
+  font-style: normal;
+      text-shadow: 2px 2px 1px #8ca659;
+    }
+
+/* footer style */
+    footer{
+      padding: 5px;
+      width: 100%;
+      background-color: rgba(7, 86, 86, 0.961);
+      align-items: center;
+      position: absolute;
+      bottom: 0%;
+    }
+    .container1 p{
+      font-size: 20px;
+      color: white;
+  
+      align-items: center;
+      
+      text-align: center;
+    }
+ 
+
+     
+  </style>
+</head>
+<body>
+  
+
+  <header>
+    <div class="container">
+   
+     
+<h1>ElectroSolve Nexus</h1>
+
+<nav>
+  <i class="ri-home-line" ></i>
+  <a href="index.html">
+    
+    <li>Home</li>
+  </a>
+  <i class="ri-shopping-cart-line"></i>
+  <a href="shop.html">
+<li class="drop-down">
+<a href="shop.html">Shop now</a>
+
+ 
+</li>
+<div>
+
+</div>
+  </a>
+  <i class="ri-tools-fill"></i>
+  <a href="solution.html">
+    <li>Solutions</li>
+  </a>
+ 
+  <i class="ri-group-line"></i>
+  <a href="aboutus.html">
+    <li>About us</li>
+  </a>
+  <i class="ri-login-box-line"></i>
+  <a href="login.php">
+    <li>Login
+    </li>
+     </a>
+</nav>
+    </div>
+  </header>
+  <main>
+<h1 style="margin-left: 40%; color: rgb(217, 147, 17);">Cart Details</h1>
+<span style="color: red; font-size: 20px; margin-left: 1%;">Note:only one item can add to cart</span>
+
+    <div id="receivedContent" width="600px" height="600px">
+
+      
+    </div>
+
+    <script>
+
+const content = localStorage.getItem('content');
+if(content){
+  document.getElementById('receivedContent').innerHTML=content;
+ 
+}
+   
+
+
+
+
+function remove(){
+  localStorage.removeItem('content');
+  document.getElementById('receivedContent').innerHTML='';
+}
+    </script>
+  </main>
+
+<footer>
+  <div class="container1">
+<p>© 2024 ElectroSolve Nexus. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+   
+  
+ 
+
+
